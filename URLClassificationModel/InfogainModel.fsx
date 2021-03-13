@@ -73,6 +73,18 @@ let datasets = context.Data.TrainTestSplit(data,testFraction=0.2)
 
 let pipeline = 
     EstimatorChain()
+        .Append(context.Transforms.NormalizeMinMax("avgpathtokenlen","avgpathtokenlen"))
+        .Append(context.Transforms.NormalizeMinMax("pathurlRatio","pathurlRatio"))
+        .Append(context.Transforms.NormalizeMinMax("ArgUrlRatio","ArgUrlRatio"))
+        .Append(context.Transforms.NormalizeMinMax("argDomanRatio","argDomanRatio"))
+        .Append(context.Transforms.NormalizeMinMax("domainUrlRatio","domainUrlRatio"))
+        .Append(context.Transforms.NormalizeMinMax("pathDomainRatio","pathDomainRatio"))
+        .Append(context.Transforms.NormalizeMinMax("argPathRatio","argPathRatio"))
+        .Append(context.Transforms.NormalizeMinMax("CharacterContinuityRate","CharacterContinuityRate"))
+        .Append(context.Transforms.NormalizeMinMax("NumberRate_URL","NumberRate_URL"))
+        .Append(context.Transforms.NormalizeMinMax("NumberRate_FileName","NumberRate_FileName"))
+        .Append(context.Transforms.NormalizeMinMax("NumberRate_AfterPath","NumberRate_AfterPath"))
+        .Append(context.Transforms.NormalizeMinMax("Entropy_Domain","Entropy_Domain"))
         .Append(context.Transforms.Concatenate("Features",[|"avgpathtokenlen"; "pathurlRatio"; "ArgUrlRatio"; "argDomanRatio"; 
         "domainUrlRatio"; "pathDomainRatio"; "argPathRatio"; "CharacterContinuityRate";"CharacterContinuityRate";"NumberRate_URL";"NumberRate_FileName";"NumberRate_AfterPath";"Entropy_Domain";|]))
         .Append(context.Transforms.Conversion.MapValueToKey("Label","URLclass"))

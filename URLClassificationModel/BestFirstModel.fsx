@@ -60,6 +60,13 @@ let datasets = context.Data.TrainTestSplit(data,testFraction=0.2)
 let pipeline = 
     EstimatorChain()
         .Append(context.Transforms.Categorical.OneHotEncoding("executable"))
+        .Append(context.Transforms.NormalizeMinMax("domain_token_count","domain_token_count"))
+        .Append(context.Transforms.NormalizeMinMax("NumberofDotsinURL","NumberofDotsinURL"))
+        .Append(context.Transforms.NormalizeMinMax("Arguments_LongestWordLength","Arguments_LongestWordLength"))
+        .Append(context.Transforms.NormalizeMinMax("NumberRate_Domain","NumberRate_Domain"))
+        .Append(context.Transforms.NormalizeMinMax("NumberRate_FileName","NumberRate_FileName"))
+        .Append(context.Transforms.NormalizeMinMax("NumberRate_AfterPath","NumberRate_AfterPath"))
+        .Append(context.Transforms.NormalizeMinMax("Entropy_Domain","Entropy_Domain"))
         .Append(context.Transforms.Concatenate("Features",[|"domain_token_count"; "executable"; "NumberofDotsinURL"; "Arguments_LongestWordLength"; 
         "NumberRate_Domain"; "NumberRate_FileName"; "NumberRate_AfterPath"; "Entropy_Domain";|]))
         .Append(context.Transforms.Conversion.MapValueToKey("Label","URLclass"))

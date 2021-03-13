@@ -20,13 +20,13 @@ InfogainData Features:
 
         Algorithm                                Results
 
-LbfgsMaximumEntropy:     Log Loss: 1.131153      Log Loss Reduction: 0.296100            MacroAccuracy: 0.567521        MicroAccuracy 0.573921
+LbfgsMaximumEntropy:     Log Loss: 1.140247      Log Loss Reduction: 0.290441            MacroAccuracy: 0.570755        MicroAccuracy 0.576897
 
 
-SdcaMaximumEntropy:      Log Loss: 1.180613      Log Loss Reduction: 0.265322            MacroAccuracy: 0.543603        MicroAccuracy 0.548221
+SdcaMaximumEntropy:      Log Loss: 1.139381      Log Loss Reduction: 0.290980            MacroAccuracy: 0.540705        MicroAccuracy 0.545381
 
 
-SdcaNonCalibrated:       Log Loss: 34.538776     Log Loss Reduction: -20.492967          MacroAccuracy: 0.524461        MicroAccuracy 0.530908
+SdcaNonCalibrated:       Log Loss: 34.538776     Log Loss Reduction: -20.492967          MacroAccuracy: 0.546791        MicroAccuracy 0.553902
 
 
 NaiveBayes:              Log Loss: 34.538776     Log Loss Reduction: -20.492967          MacroAccuracy: 0.395195        MicroAccuracy 0.400920
@@ -45,13 +45,13 @@ Confusion table
               ||========================================
 PREDICTED     ||     0 |     1 |     2 |     3 |     4 | Recall
 TRUTH         ||========================================
-0.   phishing ||   852 |    46 |   141 |    55 |   391 | 0.5737
-1.    malware ||   331 |   330 |   136 |   140 |   428 | 0.2418
-2.       spam ||   245 |    11 |   862 |   249 |     0 | 0.6306
-3. Defacement ||   261 |    81 |   146 |   955 |   193 | 0.5837
-4.     benign ||   128 |    69 |    37 |    62 | 1,244 | 0.8078
+0.   phishing ||   886 |    47 |   133 |    58 |   361 | 0.5966
+1.    malware ||   338 |   345 |   135 |   159 |   388 | 0.2527
+2.       spam ||   245 |    11 |   863 |   248 |     0 | 0.6313
+3. Defacement ||   262 |    90 |   158 |   962 |   164 | 0.5880
+4.     benign ||   145 |    38 |    63 |    85 | 1,209 | 0.7851
               ||========================================
-Precision     ||0.4689 |0.6145 |0.6520 |0.6537 |0.5514 |
+Precision     ||0.4723 |0.6497 |0.6383 |0.6362 |0.5697 |
 "
 
 
@@ -61,13 +61,13 @@ Confusion table
               ||========================================
 PREDICTED     ||     0 |     1 |     2 |     3 |     4 | Recall
 TRUTH         ||========================================
-0.   phishing ||   843 |    98 |   124 |    55 |   365 | 0.5677
-1.    malware ||   296 |   331 |    74 |   271 |   393 | 0.2425
-2.       spam ||   227 |    45 |   835 |   260 |     0 | 0.6108
-3. Defacement ||   251 |    94 |   288 |   794 |   209 | 0.4853
-4.     benign ||   140 |    80 |     7 |    63 | 1,250 | 0.8117
+0.   phishing ||   832 |    51 |   144 |    92 |   366 | 0.5603
+1.    malware ||   337 |   339 |   134 |   169 |   386 | 0.2484
+2.       spam ||   238 |    10 |   868 |   251 |     0 | 0.6350
+3. Defacement ||   261 |    94 |   226 |   898 |   157 | 0.5489
+4.     benign ||   141 |   102 |    67 |   135 | 1,095 | 0.7110
               ||========================================
-Precision     ||0.4798 |0.5108 |0.6288 |0.5502 |0.5638 |
+Precision     ||0.4599 |0.5688 |0.6032 |0.5812 |0.5464 |
 "
 
 
@@ -77,13 +77,13 @@ Confusion table
               ||========================================
 PREDICTED     ||     0 |     1 |     2 |     3 |     4 | Recall
 TRUTH         ||========================================
-0.   phishing ||   659 |    94 |   251 |    63 |   418 | 0.4438
-1.    malware ||   242 |   171 |   171 |   413 |   368 | 0.1253
-2.       spam ||   120 |    14 |   945 |   283 |     5 | 0.6913
-3. Defacement ||   160 |    78 |   309 |   896 |   193 | 0.5477
-4.     benign ||    84 |    26 |    37 |   139 | 1,254 | 0.8143
+0.   phishing ||   845 |    69 |   104 |    95 |   372 | 0.5690
+1.    malware ||   296 |   395 |    63 |   269 |   342 | 0.2894
+2.       spam ||   236 |    13 |   749 |   369 |     0 | 0.5479
+3. Defacement ||   262 |    94 |   100 | 1,047 |   133 | 0.6400
+4.     benign ||   142 |   119 |    17 |   203 | 1,059 | 0.6877
               ||========================================
-Precision     ||0.5209 |0.4465 |0.5517 |0.4994 |0.5603 |
+Precision     ||0.4745 |0.5725 |0.7251 |0.5280 |0.5556 |
 "
 
 
@@ -125,19 +125,19 @@ Precision     ||0.8192 |0.9281 |0.9736 |0.9373 |0.9330 |
 
         Algorithm                                Results
 
-LbfgsMaximumEntropy:     Log Loss: 1.040242      Log Loss Reduction: 0.352666            MacroAccuracy: 0.581933        MicroAccuracy 0.593873
+LbfgsMaximumEntropy:     Log Loss: 1.043357      Log Loss Reduction: 0.350728            MacroAccuracy: 0.565481        MicroAccuracy 0.578489
 
 
-SdcaMaximumEntropy:      Log Loss: 1.162209      Log Loss Reduction: 0.276768            MacroAccuracy: 0.579197        MicroAccuracy 0.589108
+SdcaMaximumEntropy:      Log Loss: 1.093479      Log Loss Reduction: 0.319537            MacroAccuracy: 0.570820        MicroAccuracy 0.584343
 
 
-SdcaNonCalibrated:       Log Loss: 34.538776     Log Loss Reduction: -20.493179          MacroAccuracy: 0.483180        MicroAccuracy 0.500885
+SdcaNonCalibrated:       Log Loss: 34.538776     Log Loss Reduction: -20.493179          MacroAccuracy: 0.578656        MicroAccuracy 0.587611
 
 
 NaiveBayes:              Log Loss: 34.538776     Log Loss Reduction: -20.493179          MacroAccuracy: 0.334928        MicroAccuracy 0.338189
 
 
-LightGbm:                Log Loss: 0.143150      Log Loss Reduction: 0.910919            MacroAccuracy: 0.961894        MicroAccuracy 0.962968
+LightGbm:                Log Loss: 0.143149      Log Loss Reduction: 0.910920            MacroAccuracy: 0.961894        MicroAccuracy 0.962968
 
 
 
@@ -150,13 +150,13 @@ Confusion table
               ||========================================
 PREDICTED     ||     0 |     1 |     2 |     3 |     4 | Recall
 TRUTH         ||========================================
-0.   phishing ||   968 |   143 |   112 |   127 |    69 | 0.6822
-1.     benign ||   118 | 1,264 |   100 |    59 |    51 | 0.7940
-2. Defacement ||   201 |    93 | 1,094 |    92 |   106 | 0.6898
-3.    malware ||   290 |   271 |   264 |   286 |   218 | 0.2152
-4.       spam ||   170 |    37 |   192 |   270 |   750 | 0.5285
+0.   phishing ||   972 |   141 |   109 |   130 |    67 | 0.6850
+1.     benign ||    98 | 1,294 |   101 |    53 |    46 | 0.8128
+2. Defacement ||   209 |    92 | 1,074 |    91 |   120 | 0.6772
+3.    malware ||   304 |   266 |   293 |   248 |   218 | 0.1866
+4.       spam ||   251 |    40 |   201 |   266 |   661 | 0.4658
               ||========================================
-Precision     ||0.5541 |0.6991 |0.6209 |0.3429 |0.6281 |
+Precision     ||0.5300 |0.7059 |0.6040 |0.3147 |0.5944 |
 "
 
 
@@ -166,13 +166,13 @@ Confusion table
               ||========================================
 PREDICTED     ||     0 |     1 |     2 |     3 |     4 | Recall
 TRUTH         ||========================================
-0.   phishing || 1,063 |   164 |    77 |    35 |    80 | 0.7491
-1.     benign ||   165 | 1,241 |    74 |    42 |    70 | 0.7795
-2. Defacement ||   279 |    91 |   953 |    41 |   222 | 0.6009
-3.    malware ||   320 |   299 |   209 |   260 |   241 | 0.1956
-4.       spam ||   141 |   105 |   162 |   201 |   810 | 0.5708
+0.   phishing ||   529 |   152 |   414 |   243 |    81 | 0.3728
+1.     benign ||    11 | 1,310 |   149 |   102 |    20 | 0.8229
+2. Defacement ||    69 |    92 | 1,247 |   119 |    59 | 0.7863
+3.    malware ||    84 |   277 |   349 |   467 |   152 | 0.3514
+4.       spam ||    51 |    46 |   339 |   244 |   739 | 0.5208
               ||========================================
-Precision     ||0.5401 |0.6532 |0.6461 |0.4491 |0.5692 |
+Precision     ||0.7110 |0.6979 |0.4992 |0.3974 |0.7031 |
 "
 
 
@@ -182,13 +182,13 @@ Confusion table
               ||========================================
 PREDICTED     ||     0 |     1 |     2 |     3 |     4 | Recall
 TRUTH         ||========================================
-0.   phishing ||   567 |    84 |   444 |    86 |   238 | 0.3996
-1.     benign ||    85 | 1,088 |   240 |    71 |   108 | 0.6834
-2. Defacement ||    97 |    22 | 1,352 |    45 |    70 | 0.8525
-3.    malware ||   180 |   241 |   565 |   144 |   199 | 0.1084
-4.       spam ||   126 |     6 |   658 |   101 |   528 | 0.3721
+0.   phishing ||   847 |   134 |    81 |   317 |    40 | 0.5969
+1.     benign ||    27 | 1,328 |    45 |   171 |    21 | 0.8342
+2. Defacement ||   182 |   181 |   992 |   136 |    95 | 0.6255
+3.    malware ||    90 |   383 |   181 |   566 |   109 | 0.4259
+4.       spam ||   246 |    29 |   199 |   362 |   583 | 0.4109
               ||========================================
-Precision     ||0.5374 |0.7550 |0.4149 |0.3221 |0.4619 |
+Precision     ||0.6085 |0.6462 |0.6622 |0.3647 |0.6875 |
 "
 
 
